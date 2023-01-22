@@ -102,6 +102,7 @@ body {
   text-align: center;
   box-sizing: border-box;
 }
+
 .subTitle:before {/*左側のリボン端*/
   content: '';
   position: absolute;
@@ -153,7 +154,7 @@ body {
   border-left: solid 15px #b53939;/*右の折り返し部分*/
 }
 
-.button005 a {
+#button005 a {
     border-radius: 3px;
     position: relative;
     display: flex;
@@ -170,12 +171,19 @@ body {
     background: rgb(149,202,252);
     background: linear-gradient(270deg, rgba(149,202,252,1) 0%, rgba(107,182,255,1) 100%);
 }
-.button005 a:hover {
+#button005 a:hover {
     background: rgb(117,188,255);
     background: linear-gradient(270deg, rgba(117,188,255,1) 0%, rgba(62,159,252,1) 100%);
 }
 
-.button_hello a {
+.buttons {
+    text-align: center;
+}
+.button {
+    display: inline-block;
+}
+
+#button_hello a {
     border-radius: 3px;
     position: relative;
     display: flex;
@@ -192,7 +200,7 @@ body {
     background: rgb(252, 149, 149);
     background: linear-gradient(270deg, rgb(252, 149, 149) 0%, rgb(255, 107, 107) 100%);
 }
-.button_hello a:hover {
+#button_hello a:hover {
     background: rgb(255, 117, 117);
     background: linear-gradient(270deg, rgb(255, 117, 117) 0%, rgb(252, 62, 62) 100%);
 }
