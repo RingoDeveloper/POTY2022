@@ -58,6 +58,7 @@
 
             const jsonitem_u = values_upcoming.flat();
             const jsonitem_l = values_live.flat();
+            const jsonitem_c = values_completed.flat();
             if (jsonitem_l.length < 1) {
                 document.getElementById("youtubeList_l").style.visibility = "hidden";
             } else {
@@ -72,17 +73,27 @@
                 var ID = jsonitem_u[i].id.videoId;
                 $("#youtubeList_u").append('<iframe src="https://www.youtube.com/embed/' + ID + '" frameborder="1" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-modals" allowfullscreen></iframe>');
             }
+
+            for(var i = 0; i < jsonitem_c.length; i++){
+                var ID = jsonitem_c[i].id.videoId;
+                $("#youtubeList_c").append('<iframe src="https://www.youtube.com/embed/' + ID + '" frameborder="1" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-modals" allowfullscreen></iframe>');
+            }
             }
 
             asyncFunc();
         });
 
         </script>
-        <div id="youtubeList_l">
-            
+        <div class="contents-wapper2"> 
+            <div id="youtubeList_l">
+            </div>
+            <div id="youtubeList_u">
+                <h2>配信予定</h2>
+            </div>
+            <div id="youtubeList_c">
+                <h2>過去の配信</h2>
+            </div>
         </div>
-        <div id="youtubeList_u">
-            <h2>配信予定</h2>
-        </div>
+        
     </body>
 </html>
