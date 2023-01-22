@@ -63,3 +63,7 @@ function show_result() {
     });
     localStorage.setItem('showed-result', 'true');
 }
+
+function show_list() {
+    window.open("https://ringodeveloper.github.io/POTY2022/list");
+}
