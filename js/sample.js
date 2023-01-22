@@ -65,5 +65,5 @@ function show_result() {
 }
 
 function show_list() {
-    window.open("https://ringodeveloper.github.io/POTY2022/list");
+    window.open("https://ringodeveloper.github.io/kon-layla/");
 }
