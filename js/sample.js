@@ -67,3 +67,17 @@ function show_result() {
 function show_list() {
     window.open("https://ringodeveloper.github.io/kon-layla/");
 }
+
+function toggleNav() {
+    var body = document.body;
+    var hamburger = document.getElementById('js-hamburger');
+    var blackBg = document.getElementById('js-black-bg');
+  
+    hamburger.addEventListener('click', function() {
+      body.classList.toggle('nav-open');
+    });
+    blackBg.addEventListener('click', function() {
+      body.classList.remove('nav-open');
+    });
+  }
+  toggleNav();
