@@ -174,7 +174,10 @@ body {
   /* メニュー関係 end*/
 
 .titleScripts {
-    text-align:center
+    text-align:center;
+    font-family: "hachi-maru-pop", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .contents-wapper {
     font-family: sans-serif;
@@ -190,13 +193,19 @@ body {
     margin-left: 10px;
 }
 
+
+
 @media (min-width: 800px) {
     .titleScripts {
         font-size: x-large;
+        font-family: "hachi-maru-pop", sans-serif;
+        font-weight: 400;
+        font-style: normal;
     }
     iframe {
-        width: 640px;
-        height: 360px;
+      width: 608px;
+      height: 342px;
+      border-radius: 7px;
     }
     .wtitle {
         font-size: 25pt;
@@ -448,32 +457,87 @@ body {
 }
 
 footer {
-    width: 100%;
-    height: auto;
-    background-color: #424141;
-    text-align: center;
-    color: #ddd;
-    margin-top: auto;
+  width: 100%;
+  height: auto;
+  background-color: #424141;
+  text-align: center;
+  color: #ddd;
+  margin-top: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+ul.footer_menu {
+  margin-top: 0px;
 }
 
 
 ul.footer_menu {
-    list-style-type: none;
-    padding-left: 0px;
-    margin-bottom: 0px;
+  list-style-type: none;
+  padding-left: 0px;
+  margin-bottom: 0px;
 }
 
 ul.footer_menu li {
-    display: inline;
+  display: inline;
 }
 
 #cc {
-    font-family: sans-serif;
-    color: #ddd;
+  font-family: sans-serif;
+  color: #ddd;
 }
 
 #version {
-    font-family: sans-serif;
+  font-family: sans-serif;
+  color: #ddd;
+}
+
+@media screen and (max-width: 812px) {
+  /* ここに812px以下用（タブレット・スマートフォン） */
+      .header_title{
+          font-size: x-large;
+      }
+      iframe {
+          width: 352px;
+          height: 198px;
+          border-radius: 7px;
+      }
+  
+  }
+
+@media screen and (max-width: 480px) {
+  /* ここに480px以下用（スマートフォン） */
+      
+      .header_title{
+          font-size: large;
+      }
+  
+      footer {
+          width: auto;
+          height: auto;
+          background-color: #424141;
+          text-align: center;
+          color: #ddd;
+          margin-bottom: 0%;
+      }
+  
+      footer {
+          padding-top: 5px;
+          padding-bottom: 5px;
+      }
+  
+      #cc {
+          font-size: small;
+      }
+      #version {
+          font-size: small;
+      }
+
+      iframe {
+        width: 320px;
+        height: 180px;
+        border-radius: 7px;
+      }
 }
 
 
